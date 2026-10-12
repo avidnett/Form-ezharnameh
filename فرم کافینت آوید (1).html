@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>فرم کافی‌نت آوید</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#F1EADF;--card:#FAF5EC;--bd:#DBC4A4;--tx:#2b1d14;--pr:#AD5F3A;--on:#FFF7EC;--ac:#9A4F2D;--mu:#6b5846}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2a1f19;--card:#3a2c24;--bd:#6e5445;--tx:#F1EADF;--pr:#DC9150;--on:#2b160c;--ac:#E7A978;--mu:#dcc9b4}}
+:root[data-theme="dark"]{--bg:#2a1f19;--card:#3a2c24;--bd:#6e5445;--tx:#F1EADF;--pr:#DC9150;--on:#2b160c;--ac:#E7A978;--mu:#dcc9b4}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:"Vazirmatn",Tahoma,sans-serif;font-size:1.000rem;font-weight:600;line-height:1.9;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+.w{max-width:680px;margin:0 auto;padding:14px}
+.hd{background:#AD5F3A;color:#FFF3E3;border-radius:14px;padding:14px;text-align:center;font-weight:800;font-size:1.158rem;margin:12px 0}
+.info{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:10px 14px;margin:12px 0;font-size:0.947rem}
+.cp{background:rgba(220,145,80,.2);border:2px dashed #DC9150;border-radius:12px;padding:12px;margin:12px 0;text-align:center}
+.cp b{display:block;font-size:1.474rem;font-weight:800;direction:ltr;letter-spacing:1px;margin:4px 0}
+.q{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:12px 14px;margin:12px 0}
+.q h3{margin:0 0 8px;font-size:1.053rem;font-weight:800;line-height:1.8}
+.n{display:inline-block;width:32px;height:32px;line-height:32px;text-align:center;background:#7F8559;color:#FFF8EE;border-radius:50%;margin-left:8px;font-size:0.895rem;font-weight:800}
+.sub{margin-top:8px;padding:8px 10px;border:1px dashed var(--bd);border-radius:10px}
+.sub .t{font-size:0.895rem;color:var(--mu);font-weight:600}
+.o{display:flex;align-items:center;gap:10px;margin:6px 0;padding:6px 8px;border-radius:10px;font-size:1.000rem;font-weight:600}
+.o:has(input:checked){background:rgba(127,133,89,.28)}
+label.lb{display:block;margin:0 0 4px;font-weight:800;font-size:1.000rem}
+input[type=text],input[type=tel],textarea{width:100%;padding:12px;border:2px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--tx);font:inherit;font-size:1.000rem;font-weight:600}
+input[type=radio],input[type=checkbox]{width:24px;height:24px;flex:none;accent-color:#7F8559}
+button{font:inherit;font-size:1.000rem;font-weight:800;background:var(--pr);color:var(--on);border:0;border-radius:10px;padding:10px 16px;cursor:pointer}
+button.s{background:transparent;color:var(--ac);border:2px solid var(--ac);padding:2px 12px;font-size:0.842rem}
+.big{width:100%;font-size:1.105rem;padding:14px}
+.hide{display:none!important}
+.ov{position:fixed;inset:0;z-index:50;background:rgba(30,18,10,.6);display:flex;align-items:center;justify-content:center;padding:16px}
+.ov .bx{background:var(--card);color:var(--tx);border:3px solid #DC9150;border-radius:16px;padding:18px;max-width:560px;max-height:88vh;overflow:auto;text-align:center;line-height:2}
+.ov h2{margin:0 0 6px;font-size:1.4rem;color:var(--ac)}
+.ov p{margin:6px 0}
+.btn{display:block;text-align:center;text-decoration:none;background:#6B7048;color:#FFF7EC;border-radius:12px;font-weight:800;line-height:1.7;box-shadow:0 2px 0 rgba(0,0,0,.15)}
+.mu{color:var(--mu);font-size:0.895rem}
+.ok{background:#F2C898;color:#3a1f0f;border-radius:12px;padding:14px;margin:12px 0;text-align:center;font-weight:800}
+html{font-size:15.2px}
+.fz{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;align-items:center;justify-content:center;gap:10px;background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:6px 10px;margin-bottom:8px}
+.fz span{font-size:14px;color:var(--mu)}
+.fz button{font-size:17px;padding:2px 14px;border-radius:8px;line-height:1.6}
+</style>
+</head>
+<body>
+<div class="ov" id="ov" role="dialog" aria-modal="true"><div class="bx">
+  <h2>⚠️ توجه فرمایید</h2>
+  <p>این فرم توسط شخص سرپرست خانوار پر می‌شود. مسئولیت هرگونه اشتباه، اطلاعات غلط و هرگونه عواقب آن به عهده سرپرست خانوار و یا فردی است که اطلاعات را تکمیل کرده است.</p>
+  <p><b>پس از صحت اطلاعات مطمئن باشید.</b></p>
+  <p>این فرم هیچ‌گونه مسئولیتی برای کافی‌نت آوید ایجاد نمی‌کند.</p>
+  <p>سپاس از همراهی همیشگی شما 🌷</p>
+  <button class="big" id="ovb" type="button">متوجه شدم</button>
+</div></div>
+<div class="w">
+  <div class="fz"><button id="fm1" type="button" aria-label="کوچک‌کردن نوشته">A−</button><span>اندازه نوشته</span><button id="fp1" type="button" aria-label="بزرگ‌کردن نوشته">A+</button></div>
+  <div class="hd">این فرم مربوط به کافی‌نت آوید می‌باشد</div>
+  <div class="cp">
+    <div>برای دریافت کد این شماره را در شماره‌گیر استفاده بفرمایید</div>
+    <b id="cn">*4*40#</b>
+    <button id="cb" type="button">کپی</button>
+    <div id="cm" class="hide" style="margin-top:8px;color:var(--ac);font-weight:800">حالا داخل شماره‌گیر با شماره سرپرست خانوار این عدد را شماره‌گیری کنید</div>
+  </div>
+  <div class="info">📞 شماره تماس کافی‌نت آوید: <b dir="ltr">09215745109</b> <button class="s" id="pb" type="button">کپی</button><br>📍 آدرس: شرف‌آباد، بیست‌متری مطهری، بعد از چهارکوچه دوم سمت راست</div>
+
+  <div id="fm">
+    <div class="hd">اطلاعات فردی سرپرست خانوار</div>
+    <div class="q"><label class="lb">نام و نام خانوادگی</label><input type="text" id="name" maxlength="40" autocomplete="name"></div>
+    <div class="q"><label class="lb">کد ملی</label><input type="tel" id="nid" inputmode="numeric" maxlength="10"></div>
+    <div class="q"><label class="lb">شماره موبایل <span class="mu">(به نام سرپرست)</span></label><input type="tel" id="phone" inputmode="numeric" maxlength="11" placeholder="09xxxxxxxxx"></div>
+    <div class="q"><label class="lb">کد پستی محل سکونت</label><input type="tel" id="zip" inputmode="numeric" maxlength="10"></div>
+
+    <div class="hd">فرم خوداظهاری افزایش کالا برگ</div>
+    <div id="qs"></div>
+
+    <div id="err" style="color:#c62828;font-weight:800"></div>
+    <button class="big" id="sb" type="button">ارسال اطلاعات</button>
+  </div>
+
+  <div id="done" class="hide">
+    <div class="ok">✅ اطلاعات شما آماده شد.<br>برای تکمیل ثبت، کد عددی را برای کافی‌نت آوید بفرستید.</div>
+    <a class="big btn" id="rb" href="https://rubika.ir/Zahra_zngb" target="_blank" rel="noopener">📨 ارسال مستقیم به پیوی روبیکا<br><span style="font-size:.85rem">@Zahra_zngb</span></a>
+    <p class="mu" id="rm">با زدن دکمه بالا، کد کپی می‌شود و مستقیم به پیوی روبیکا وصل می‌شوید؛ فقط کافی است کد را در پیام پیست و ارسال کنید.</p>
+    <textarea id="code" rows="4" readonly></textarea>
+    <button class="big" id="cc" type="button" style="margin-top:8px">کپی کد</button>
+  </div>
+</div>
+<script>
+
+const AL="ابپتثجچحخدذرزژسشصضطظعغفقکگلمنوهیءئؤأإآ \u200c0123456789-/.،():+abcdefghijklmnopqrstuvwxyz";
+const O={
+ yn:["بله","خیر"],
+ org:["کمیته امداد امام خمینی","سازمان بهزیستی","سایر"],
+ prop:["زمین یا ملک مسکونی شهری","ملک یا زمین مسکونی روستایی","ملک تجاری/اداری/صنعتی","زمین کشاورزی"],
+ veh:["سواری","خودرو مسافربری","باری","ماشین‌آلات کشاورزی","ماشین‌آلات صنعتی و راهسازی","قایق موتوری و لنج","موتورسیکلت"],
+ inc:["کمتر از ۲۰ میلیون تومان","از ۲۰ تا ۴۰ میلیون تومان","از ۴۰ تا ۶۰ میلیون تومان","از ۶۰ تا ۸۰ میلیون تومان","بالای ۸۰ میلیون تومان"],
+ job:["شاغل","بازنشسته","بیکار"],
+ edu:["دیپلم","فوق دیپلم","لیسانس","فوق لیسانس","زیر دیپلم"],
+ sk:["فنی","خدماتی","کشاورزی","تولیدی","ساختمانی"]
+};
+function norm(s){return String(s||"").toLowerCase().replace(/ك/g,"ک").replace(/[يى]/g,"ی").replace(/ة/g,"ه").replace(/[۰-۹]/g,d=>"۰۱۲۳۴۵۶۷۸۹".indexOf(d)).replace(/[٠-٩]/g,d=>d.charCodeAt(0)-1632).replace(/\s+/g," ").trim();}
+const ix=ch=>{const i=AL.indexOf(ch);return i<0?AL.indexOf(" "):i};
+const mk=(arr,l)=>{let m=0;arr.forEach((x,i)=>{if((l||[]).includes(x))m|=1<<i});return m};
+const unmk=(arr,m)=>arr.filter((x,i)=>m>>i&1).join("، ");
+
+
+function enc(d){
+  const P=[],R=AL.length,push=(v,r)=>P.push([BigInt(v),BigInt(r)]);
+  const nm=norm(d.n).slice(0,40),ot=norm(d.bo).slice(0,20),cr=norm(d.d).slice(0,100);
+  for(const ch of nm)push(ix(ch),R);
+  for(const ch of ot)push(ix(ch),R);
+  for(const ch of cr)push(ix(ch),R);
+  push(cr.length,101);push(ot.length,21);push(nm.length,41);
+  push(O.yn.indexOf(d.a),2);push(O.org.indexOf(d.b)+1,4);
+  push(O.yn.indexOf(d.c),2);push(mk(O.prop,d.cm),16);
+  push(O.yn.indexOf(d.v),2);push(mk(O.veh,d.vm),128);
+  push(O.inc.indexOf(d.e),5);push(O.job.indexOf(d.f),3);push(O.edu.indexOf(d.h),5);push(O.sk.indexOf(d.s),5);
+  push(O.yn.indexOf(d.g),2);push(2,16);
+  push(d.p.slice(2),1e9);push(d.k,1e10);push(d.z,1e10);
+  const N=P.reduce((n,[v,r])=>n*r+v,0n).toString();
+  return N.replace(/(\d{5})(?=\d)/g,"$1 ");
+}
+
+const $ = id => document.getElementById(id);
+$("ovb").onclick=()=>$("ov").classList.add("hide");
+let FS=15.2;try{FS=parseFloat(localStorage.getItem("avid_fs"))||15.2}catch(e){}
+function setFS(v){FS=Math.max(11,Math.min(26,v));document.documentElement.style.fontSize=FS+"px";try{localStorage.setItem("avid_fs",FS)}catch(e){}}
+setFS(FS);
+$("fm1").onclick=()=>setFS(FS-1.2);$("fp1").onclick=()=>setFS(FS+1.2);
+const en = s => String(s||"").replace(/[۰-۹]/g,d=>"۰۱۲۳۴۵۶۷۸۹".indexOf(d)).replace(/[٠-٩]/g,d=>d.charCodeAt(0)-1632);
+function copy(t, btn){
+  const ok = () => { if(btn){const o=btn.textContent; btn.textContent="کپی شد ✓"; setTimeout(()=>btn.textContent=o,1200);} };
+  if(navigator.clipboard) navigator.clipboard.writeText(t).then(ok).catch(fb); else fb();
+  function fb(){const a=document.createElement("textarea");a.value=t;document.body.appendChild(a);a.select();try{document.execCommand("copy")}catch(e){}a.remove();ok();}
+}
+$("cb").onclick = () => { copy("*4*40#", $("cb")); $("cm").classList.remove("hide"); };
+$("pb").onclick = () => copy("09215745109", $("pb"));
+
+// ساخت سوالات
+const QS=[
+ {id:"a",t:"آیا شما تحت پوشش نهادهای حمایتی کمیته امداد، سازمان بهزیستی یا سایر هستید؟",yn:1,sub:{t:"نهاد حمایتی را انتخاب کنید",k:"b",type:"radio",opts:O.org,other:true}},
+ {id:"c",t:"آیا خانواده شما ملک (زمین، مسکونی، تجاری، کشاورزی و غیره) در تملک دارد؟",note:"هرگونه ملک باسند رسمی، غیررسمی، قولنامه‌ای، واگذاری و نظیر این‌ها",yn:1,sub:{t:"نوع ملک را انتخاب کنید",k:"cm",type:"checkbox",opts:O.prop}},
+ {id:"v",t:"آیا خانواده شما دارای وسیله نقلیه (انواع شامل سواری، خودرو مسافربری، باری، ماشین‌آلات کشاورزی، صنعتی، راهسازی، قایق موتوری و لنج، موتورسیکلت) می‌باشد؟",yn:1,sub:{t:"نوع وسیله نقلیه را انتخاب کنید",k:"vm",type:"checkbox",opts:O.veh,text:true}},
+ {id:"e",t:"مجموع درآمد ماهیانه خانواده از طریق مختلف چقدر است؟",note:"شامل سهام، حقوق، سودسرمایه، اجاره و موارد مشابه",type:"radio",opts:O.inc},
+ {id:"f",t:"وضعیت شغلی سرپرست خانوار؟",type:"radio",opts:O.job,extra:{t:"تحصیلات سرپرست",k:"h",opts:O.edu}},
+ {id:"s",t:"نوع مهارت را انتخاب کنید؟",type:"radio",opts:O.sk},
+ {id:"g",t:"آیا خانواده شما دارای هزینه‌های خاص (بیماری خاص، بیماری صعب‌العلاج، بیماری‌های پرهزینه مورد تایید بیمه) می‌باشد؟",yn:1}
+];
+const NUM="۱۲۳۴۵۶۷۸۹";
+function opts(name,arr,type){return arr.map(x=>'<label class="o"><input type="'+type+'" name="'+name+'" value="'+x+'">'+x+'</label>').join("")}
+$("qs").innerHTML=QS.map((q,i)=>{
+  let h='<div class="q"><h3><span class="n">'+NUM[i]+'</span>'+q.t+'</h3>';
+  if(q.note)h+='<div class="mu">('+q.note+')</div>';
+  if(q.yn)h+=opts(q.id,O.yn,"radio");else h+=opts(q.id,q.opts,"radio");
+  if(q.sub){const s=q.sub;h+='<div class="sub hide" id="sub_'+q.id+'"><div class="t">'+s.t+'</div>'+opts(s.k,s.opts,s.type);
+    if(s.other)h+='<input type="text" id="bo" maxlength="20" placeholder="نام نهاد دیگر" style="margin-top:6px">';
+    if(s.text)h+='<label class="lb" style="margin-top:8px">نام و مدل خودروها را بنویسید (اختیاری)</label><textarea id="car" rows="3" maxlength="100" placeholder="مثال: پراید ۱۳۹۰، کامیون ۱۳۹۵"></textarea>';
+    h+='</div>';}
+  if(q.extra){const x=q.extra;h+='<div class="sub"><div class="t">'+x.t+'</div>'+opts(x.k,x.opts,"radio")+'</div>';}
+  return h+'</div>';
+}).join("");
+const val=n=>{const e=document.querySelector('input[name="'+n+'"]:checked');return e?e.value:""};
+const vals=n=>[...document.querySelectorAll('input[name="'+n+'"]:checked')].map(x=>x.value);
+["a","c","v"].forEach(id=>document.querySelectorAll('input[name="'+id+'"]').forEach(r=>r.onchange=()=>$("sub_"+id).classList.toggle("hide",val(id)!=="بله")));
+
+let code="";
+$("sb").onclick = () => {
+  const d={n:$("name").value.trim(),p:en($("phone").value).trim(),k:en($("nid").value).trim(),z:en($("zip").value).trim(),
+    a:val("a"),b:val("b"),bo:$("bo").value.trim(),c:val("c"),cm:vals("cm"),v:val("v"),vm:vals("vm"),d:$("car").value.trim(),
+    e:val("e"),f:val("f"),h:val("h"),s:val("s"),g:val("g")};
+  if(d.a!=="بله"){d.b="";d.bo=""}
+  if(d.c!=="بله")d.cm=[];
+  if(d.v!=="بله"){d.vm=[];d.d=""}
+  let e="";
+  if(!d.n)e="نام و نام خانوادگی را وارد کنید.";
+  else if(!/^\d{10}$/.test(d.k))e="کد ملی باید ۱۰ رقم باشد.";
+  else if(!/^09\d{9}$/.test(d.p))e="شماره موبایل باید ۱۱ رقم و با ۰۹ شروع شود.";
+  else if(!/^\d{10}$/.test(d.z))e="کد پستی باید ۱۰ رقم باشد.";
+  else if(!d.a||!d.c||!d.v||!d.e||!d.f||!d.h||!d.s||!d.g)e="لطفاً همه سوالات را پاسخ دهید.";
+  else if(d.a==="بله"&&!d.b)e="نهاد حمایتی را انتخاب کنید.";
+  else if(d.b==="سایر"&&!d.bo)e="نام نهاد دیگر را بنویسید.";
+  else if(d.c==="بله"&&!d.cm.length)e="نوع ملک را انتخاب کنید.";
+  else if(d.v==="بله"&&!d.vm.length)e="نوع وسیله نقلیه را انتخاب کنید.";
+  $("err").textContent=e; if(e)return;
+  code=enc(d);
+  $("code").value=code;
+  $("fm").classList.add("hide");$("done").classList.remove("hide");scrollTo(0,0);
+};
+$("cc").onclick=()=>copy(code,$("cc"));
+$("rb").onclick=()=>{
+  copy(code,null);
+  $("rm").textContent="✅ کد کپی شد. در پیوی روبیکا (@Zahra_zngb) پیست و ارسال کنید.";
+};
+</script>
+</body>
+</html>
